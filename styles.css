@@ -12,10 +12,10 @@ body {
 }
 
 body {
-  background-color: #000;
+  background-image: radial-gradient(#ffffff, #4a4a4a);
   color: #fff;
   font-size: 16px;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 /* ---------------- VARIÁVEIS ---------------- */
@@ -34,7 +34,6 @@ header {
   transform: translateX(-50%);
   width: 100%;
   max-width: 1300px;
-  /* Limita o tamanho para não ficar estourando */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,9 +234,12 @@ header img.logo {
 
 /* ---------------- container ---------------- */
 .container {
-  background-image: radial-gradient(#ffffff, #4a4a4a);
   height: 100vh;
   position: relative;
+  transform: scale(0.8); /* Diminui para 90% */
+  transform-origin: top center; 
+  justify-content: space-between;
+  gap: 100px;
 }
 
 /* Linha central da container */
@@ -247,7 +249,7 @@ header img.logo {
   top: 50%;
   height: 200px;
   width: 100%;
-  border-top: 1px solid #fff;
+  
 }
 
 /* Lista de itens (carros) */
@@ -272,6 +274,7 @@ header img.logo {
   top: 50%;
   transform: translateY(-50%);
   width: 70%;
+  right: 40%;
 }
 
 .list .item .car-img img {
@@ -355,9 +358,13 @@ header img.logo {
   opacity: 0;
 }
 
+.content {
+  left: 35%;
+}
+
 /* ---------------- ARROWS ---------------- */
 .arrows {
-  width: 70vw;
+  width: 90vw;
   position: absolute;
   top: 50%;
   left: 50%;
