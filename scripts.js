@@ -36,3 +36,17 @@ prevButton.onclick = () => {
 
 }
 
+  const cartBtn = document.getElementById('cart-btn');
+  const cartWindow = document.getElementById('cart-window');
+
+  cartBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    cartWindow.style.display = (cartWindow.style.display === 'block') ? 'none' : 'block';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!cartWindow.contains(e.target) && !cartBtn.contains(e.target)) {
+      cartWindow.style.display = 'none';
+    }
+  });
+
