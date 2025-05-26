@@ -16,11 +16,12 @@ function setSlider() {
 
     let dotsOld = indicator.querySelector('ul li.active')
     dotsOld.classList.remove('active')
-    dots[active].classList.add('active')
 
+    dots[active].classList.add('active')
     indicator.querySelector('.number').innerHTML = '0' + (active + 1)
 }
 
+// Botão Next
 nextButton.onclick = () => {
     list.style.setProperty('--calculation', 1)
     active = active + 1 > lastPosition ? 0 : active + 1
@@ -28,13 +29,19 @@ nextButton.onclick = () => {
     itens[active].classList.add('active')
 }
 
+// Botão Previous
 prevButton.onclick = () => {
     list.style.setProperty('--calculation', -1)
     active = active - 1 < firstPosition ? lastPosition : active - 1
     setSlider()
     itens[active].classList.add('active')
-
 }
+
+// ✅ Autoplay (Slide automático)
+let autoPlay = setInterval(() => {
+    nextButton.onclick()
+}, 6000) // A cada 3 segundos
+
 
   const cartBtn = document.getElementById('cart-btn');
   const cartWindow = document.getElementById('cart-window');

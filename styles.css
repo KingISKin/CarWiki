@@ -660,3 +660,82 @@ header img.logo {
   align-items: center;
 }
 
+.randomcars {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+
+.alta-titulo {
+  font-size: 3rem;             /* Maior */
+  color: #fff;                 /* Branco */
+  text-align: center;          /* Centralizado */
+  margin-bottom: 30px;
+  font-weight: 700;            /* Negrito */
+  padding-left: 0;             /* Remove padding esquerdo para centralizar melhor */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Sombra para destaque */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais elegante */
+}
+
+/* Container dos cards */
+.alta-caixa {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Cada card */
+.alta-card {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 350px;
+
+  /* Aumentar a altura mínima do card para mostrar melhor a imagem */
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Efeito hover do card */
+.alta-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagem do card */
+.alta-cars-imagem {
+  width: 100%;
+  height: 400px; /* altura maior para a imagem */
+  object-fit: cover;
+  display: block;
+}
+
+/* Título dentro do card */
+.info-car {
+  font-size: 1.5rem;
+  color: var(--claro);
+  margin: 15px;
+  margin-bottom: 10px;
+}
+
+/* Container do texto dentro do card */
+.caixa-textos-alta {
+  padding: 0 15px 15px;
+  flex-grow: 1; /* faz o texto ocupar espaço restante */
+}
+
+/* Parágrafo de descrição */
+.paragrafo-alta {
+  font-size: 0.95rem;
+  color: var(--secundaria);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
