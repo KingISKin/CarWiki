@@ -21,7 +21,6 @@ function setSlider() {
     indicator.querySelector('.number').innerHTML = '0' + (active + 1)
 }
 
-// Botão Next
 nextButton.onclick = () => {
     list.style.setProperty('--calculation', 1)
     active = active + 1 > lastPosition ? 0 : active + 1
@@ -29,7 +28,7 @@ nextButton.onclick = () => {
     itens[active].classList.add('active')
 }
 
-// Botão Previous
+
 prevButton.onclick = () => {
     list.style.setProperty('--calculation', -1)
     active = active - 1 < firstPosition ? lastPosition : active - 1
@@ -37,10 +36,9 @@ prevButton.onclick = () => {
     itens[active].classList.add('active')
 }
 
-// ✅ Autoplay (Slide automático)
 let autoPlay = setInterval(() => {
     nextButton.onclick()
-}, 6000) // A cada 3 segundos
+}, 6000) 
 
 
   const cartBtn = document.getElementById('cart-btn');
