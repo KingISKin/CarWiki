@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://kit.fontawesome.com/39fab3ea6d.js" crossorigin />
+  <script src="https://kit.fontawesome.com/39fab3ea6d.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="./img/crow.png">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link
@@ -23,7 +23,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 
@@ -40,11 +41,12 @@
 
     <nav>
       <ul class="menu">
-        <a href="#inicio" class="menu-link">Home</a>
-        <a href="#colecao" class="menu-link">Coleção</a>
-        <a href="#produtos" class="menu-link">Produtos</a>
-        <a href="#sobre" class="menu-link">Fale conosco</a>
+        <li><a href="#inicio" class="menu-link">Home</a></li>
+        <li><a href="#colecao" class="menu-link">Coleção</a></li>
+        <li><a href="#produtos" class="menu-link">Produtos</a></li>
+        <li><a href="#sobre" class="menu-link">Fale conosco</a></li>
       </ul>
+
     </nav>
     <a href="#" class="cart" id="cart-btn">
       <i class="fas fa-shopping-cart"></i>
@@ -68,19 +70,19 @@
     <div class="list">
       <div class="item active">
         <div class="car-img">
-          <img src="./img/1.png" alt="imagem carro" />
+          <img src="./img/1.png" alt="imagem carro" class="img-carro"/>
         </div>
         <div class="content">
           <p class="car-information">Único Dono</p>
           <h2>911 Turbo</h2>
-          <p class="descripton">
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
             est nemo repellat debitis ut officiis earum animi! Fugit illo unde
             distinctio! Nobis eligendi ea dicta fuga at iure laborum
             reiciendis?
           </p>
           <div class="wrap">
-            <button class="Submit">Ver Mais</a>
+            <button class="Submit">Ver Mais</button>
           </div>
         </div>
       </div>
@@ -91,7 +93,7 @@
         <div class="content">
           <p class="car-information">Conversível</p>
           <h2>Ferrari</h2>
-          <p class="descripton">
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
             est nemo repellat debitis ut officiis earum animi! Fugit illo unde
             distinctio! Nobis eligendi ea dicta fuga at iure laborum
@@ -99,26 +101,26 @@
           </p>
 
           <div class="wrap">
-            <button class="Submit">Ver Mais</a>
+            <button class="Submit">Ver Mais</button>
           </div>
 
         </div>
       </div>
       <div class="item">
         <div class="car-img">
-          <img src="./img/3.png" alt="imagem carro" />
+          <img src="./img/3.png" alt="imagem carro" class="img-carro"/>
         </div>
         <div class="content">
           <p class="car-information">2015</p>
           <h2>Lamborghini</h2>
-          <p class="descripton">
+          <p class="description">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
             est nemo repellat debitis ut officiis earum animi! Fugit illo unde
             distinctio! Nobis eligendi ea dicta fuga at iure laborum
             reiciendis?
           </p>
           <div class="wrap">
-            <button class="Submit">Ver Mais</a>
+            <button class="Submit">Ver Mais</button>
           </div>
         </div>
       </div>
@@ -146,126 +148,126 @@
   <section id="randomcars" class="randomcars">
     <h2 class="alta-titulo">Mais Procurados</h2>
     <div class="carousel-container">
-  <button class="prev-btn">&#10094;</button>
-  <div class="alta-caixa">
+      <button class="prev-btn">&#10094;</button>
+      <div class="alta-caixa">
 
-    <!-- Card Bone Shaker -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/1.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Bone Shaker</h2>
-        <p class="paragrafo-alta">
-          Ícone da Hot Wheels, famoso pelo design de caveira na frente e carroceria estilo hot rod.
-        </p>
-        <ul class="car-specs">
-          <li>⚙️ Motor: V8</li>
-          <li>💀 Design: Caveira frontal</li>
-          <li>🔥 Popularidade: ★★★★★</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Bone Shaker -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/1.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Bone Shaker</h2>
+            <p class="paragrafo-alta">
+              Ícone da Hot Wheels, famoso pelo design de caveira na frente e carroceria estilo hot rod.
+            </p>
+            <ul class="car-specs">
+              <li>⚙️ Motor: V8</li>
+              <li>💀 Design: Caveira frontal</li>
+              <li>🔥 Popularidade: ★★★★★</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-    <!-- Card Twin Mill -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/2.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Twin Mill</h2>
-        <p class="paragrafo-alta">
-          Equipado com dois motores V8 expostos, um dos modelos mais icônicos da Hot Wheels.
-        </p>
-        <ul class="car-specs">
-          <li>⚙️ Motor: Twin V8</li>
-          <li>💎 Status: Edição Lendária</li>
-          <li>🔥 Popularidade: ★★★★★</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Twin Mill -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/2.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Twin Mill</h2>
+            <p class="paragrafo-alta">
+              Equipado com dois motores V8 expostos, um dos modelos mais icônicos da Hot Wheels.
+            </p>
+            <ul class="car-specs">
+              <li>⚙️ Motor: Twin V8</li>
+              <li>💎 Status: Edição Lendária</li>
+              <li>🔥 Popularidade: ★★★★★</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-    <!-- Card Deora II -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/3.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Deora II</h2>
-        <p class="paragrafo-alta">
-          Picape futurista com prancha de surf nas laterais, sucesso entre colecionadores.
-        </p>
-        <ul class="car-specs">
-          <li>🚙 Tipo: Pickup Futurista</li>
-          <li>🌊 Acessório: 2 Pranchas de Surf</li>
-          <li>🔥 Popularidade: ★★★★☆</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Deora II -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/3.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Deora II</h2>
+            <p class="paragrafo-alta">
+              Picape futurista com prancha de surf nas laterais, sucesso entre colecionadores.
+            </p>
+            <ul class="car-specs">
+              <li>🚙 Tipo: Pickup Futurista</li>
+              <li>🌊 Acessório: 2 Pranchas de Surf</li>
+              <li>🔥 Popularidade: ★★★★☆</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-    <!-- Card Roger Dodger -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/4.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Roger Dodger</h2>
-        <p class="paragrafo-alta">
-          Muscle car agressivo, conhecido pelo motor exposto e alto desempenho.
-        </p>
-        <ul class="car-specs">
-          <li>⚙️ Motor: V8 Turbo</li>
-          <li>🏎️ Estilo: Muscle Car</li>
-          <li>🔥 Popularidade: ★★★★☆</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Roger Dodger -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/4.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Roger Dodger</h2>
+            <p class="paragrafo-alta">
+              Muscle car agressivo, conhecido pelo motor exposto e alto desempenho.
+            </p>
+            <ul class="car-specs">
+              <li>⚙️ Motor: V8 Turbo</li>
+              <li>🏎️ Estilo: Muscle Car</li>
+              <li>🔥 Popularidade: ★★★★☆</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-    <!-- Card Rip Rod -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/5.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Rip Rod</h2>
-        <p class="paragrafo-alta">
-          Protótipo compacto off-road, mistura de buggy com hot rod, famoso nos games da marca.
-        </p>
-        <ul class="car-specs">
-          <li>⚙️ Motor: Turbo 4 cilindros</li>
-          <li>🏜️ Tipo: Off-road Buggy</li>
-          <li>🔥 Popularidade: ★★★★☆</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Rip Rod -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/5.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Rip Rod</h2>
+            <p class="paragrafo-alta">
+              Protótipo compacto off-road, mistura de buggy com hot rod, famoso nos games da marca.
+            </p>
+            <ul class="car-specs">
+              <li>⚙️ Motor: Turbo 4 cilindros</li>
+              <li>🏜️ Tipo: Off-road Buggy</li>
+              <li>🔥 Popularidade: ★★★★☆</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-    <!-- Card Speed Spider -->
-    <a href="#" class="alta-card">
-      <div class="card-image">
-        <img src="./static/img/cars/6.jpg" class="alta-cars-imagem">
-      </div>
-      <div class="card-info">
-        <h2 class="info-car">Speed Spider</h2>
-        <p class="paragrafo-alta">
-          Carro inspirado em uma aranha, com pernas mecânicas na lataria e design radical.
-        </p>
-        <ul class="car-specs">
-          <li>🕷️ Design: Aranha Mecânica</li>
-          <li>⚙️ Motor: Turbo V6</li>
-          <li>🔥 Popularidade: ★★★☆☆</li>
-        </ul>
-        <button class="btn-saiba-mais">Saiba Mais</button>
-      </div>
-    </a>
+        <!-- Card Speed Spider -->
+        <a href="#" class="alta-card">
+          <div class="card-image">
+            <img src="./static/img/cars/6.jpg" class="alta-cars-imagem">
+          </div>
+          <div class="card-info">
+            <h2 class="info-car">Speed Spider</h2>
+            <p class="paragrafo-alta">
+              Carro inspirado em uma aranha, com pernas mecânicas na lataria e design radical.
+            </p>
+            <ul class="car-specs">
+              <li>🕷️ Design: Aranha Mecânica</li>
+              <li>⚙️ Motor: Turbo V6</li>
+              <li>🔥 Popularidade: ★★★☆☆</li>
+            </ul>
+            <button class="btn-saiba-mais">Saiba Mais</button>
+          </div>
+        </a>
 
-  </div>
-  <button class="next-btn">&#10095;</button>
-</div>
+      </div>
+      <button class="next-btn">&#10095;</button>
+    </div>
 
   </section>
 
